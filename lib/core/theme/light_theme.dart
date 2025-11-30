@@ -9,7 +9,7 @@ final ThemeData lightTheme = ThemeData(
     onPrimary: AppColors.lightBackground,
     secondary: AppColors.secondryLight,
     onSecondary: AppColors.onSecondaryLight,
-    onSurface: AppColors.onSurfaceLight,
+    onSurface: AppColors.primary,
     primaryContainer: AppColors.mainDark,
   ),
   appBarTheme: const AppBarTheme(
