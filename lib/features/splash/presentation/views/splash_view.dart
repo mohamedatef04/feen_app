@@ -1,6 +1,8 @@
 import 'package:feen_app/core/widgets/logo_widget.dart';
+import 'package:feen_app/features/get_started/presentation/views/get_started_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:go_router/go_router.dart';
 
 class SplashView extends StatefulWidget {
   const SplashView({super.key});
@@ -16,6 +18,7 @@ class _SplashViewState extends State<SplashView> {
     super.initState();
     Future.delayed(const Duration(seconds: 2), () {
       //* Navigate to Get Started View
+      GoRouter.of(context).go(GetStartedView.routeName);
     });
   }
 

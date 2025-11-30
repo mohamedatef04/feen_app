@@ -34,7 +34,7 @@ abstract class AppTextStyles {
     return TextStyle(
       fontSize: 16.sp,
       fontWeight: FontWeight.bold,
-      color: AppColors.primary,
+      color: AppColors.white,
       fontFamily: 'IBM Plex Sans Arabic',
     );
   }
@@ -70,7 +70,7 @@ abstract class AppTextStyles {
     return TextStyle(
       fontSize: 16.sp,
       fontWeight: FontWeight.w600,
-      color: AppColors.primary,
+      color: Theme.of(context).colorScheme.onSurface,
       fontFamily: 'IBM Plex Sans Arabic',
     );
   }
