@@ -1,6 +1,7 @@
 import 'package:feen_app/core/routes/app_routes.dart';
 import 'package:feen_app/core/theme/app_theme.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 void main() {
@@ -18,8 +19,17 @@ class FeenApp extends StatelessWidget {
       builder: (context, child) => MaterialApp.router(
         debugShowCheckedModeBanner: false,
         routerConfig: router,
-        theme: AppTheme.getLightTheme(),
+        theme: AppTheme.getDarkTheme(),
         locale: const Locale('ar'),
+        supportedLocales: const [
+          Locale('ar'), // Arabic
+          Locale('en'), // English
+        ],
+        localizationsDelegates: const [
+          GlobalMaterialLocalizations.delegate,
+          GlobalWidgetsLocalizations.delegate,
+          GlobalCupertinoLocalizations.delegate,
+        ],
       ),
     );
   }

@@ -115,7 +115,7 @@ abstract class AppTextStyles {
     return TextStyle(
       fontSize: 14.sp,
       fontWeight: FontWeight.w500,
-      color: AppColors.primary,
+      color: AppColors.primaryDark,
       fontFamily: 'IBM Plex Sans Arabic',
     );
   }

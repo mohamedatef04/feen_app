@@ -2,9 +2,12 @@ import 'package:feen_app/core/constants/app_strings.dart';
 import 'package:feen_app/core/utils/app_colors.dart';
 import 'package:feen_app/core/utils/app_text_styles.dart';
 import 'package:feen_app/core/widgets/logo_widget.dart';
+import 'package:feen_app/features/auth/presentation/views/login_view.dart';
+import 'package:feen_app/features/auth/presentation/views/register_view.dart';
 import 'package:feen_app/features/get_started/presentation/widgets/custom_button_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:go_router/go_router.dart';
 
 class GetStartedView extends StatelessWidget {
   const GetStartedView({super.key});
@@ -30,7 +33,7 @@ class GetStartedView extends StatelessWidget {
                   children: [
                     CustomButtonWidget(
                       onPressed: () {
-                        //* navigate to sign up view
+                        GoRouter.of(context).push(RegisterView.routeName);
                       },
                       backgroundColor: AppColors.primary,
                       child: Text(
@@ -41,7 +44,7 @@ class GetStartedView extends StatelessWidget {
                     ),
                     CustomButtonWidget(
                       onPressed: () {
-                        //* navigate to login view
+                        GoRouter.of(context).push(LoginView.routeName);
                       },
                       backgroundColor: Theme.of(
                         context,

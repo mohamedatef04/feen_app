@@ -20,6 +20,7 @@ abstract class AppStrings {
   static const String successfulRegistrationForPassenger =
       'لقد تم تسجيل دخولك بنجاح';
   static const String thanksForUsingOurApp = 'شكرا لاستخدام تطبيقنا';
+  static const String backToLogin = 'العوده لتسجيل الدخول';
   static const String exit = 'خروج';
   static const String approveConditions =
       'بمجرد الضغط علي تسجيل فانك توافق على الشروط والاحكام';
